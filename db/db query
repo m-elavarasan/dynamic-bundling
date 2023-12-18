@@ -1,0 +1,848 @@
+use('dynamic_bundling_db')
+db.users.insertMany([
+  {
+    "firstName": "Karthik",
+    "lastName": "Raj",
+    "address": {
+      "line1": "123 Main Street",
+      "line2": "Apartment 4B",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600001"
+    },
+    "phone": "+919876543211",
+    "email": "karthik@gmail.com",
+    "dob": "1990-05-15",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Priya",
+    "lastName": "Kumar",
+    "address": {
+      "line1": "456 Oak Avenue",
+      "line2": "Suite 7C",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "pincode": "641001"
+    },
+    "phone": "+918765432112",
+    "email": "priya@gmail.com",
+    "dob": "1992-08-22",
+    "gender": "Female"
+  },
+  {
+    "firstName": "Saravanan",
+    "lastName": "Siva",
+    "address": {
+      "line1": "789 Pine Street",
+      "line2": "Unit 10",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "phone": "+917890123456",
+    "email": "saravanan@gmail.com",
+    "dob": "1985-11-10",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Ananya",
+    "lastName": "Ganesh",
+    "address": {
+      "line1": "101 Elm Road",
+      "line2": "Floor 3",
+      "city": "Trichy",
+      "state": "Tamil Nadu",
+      "pincode": "620008"
+    },
+    "phone": "+916543210987",
+    "email": "ananya@gmail.com",
+    "dob": "1998-03-25",
+    "gender": "Female"
+  },
+  {
+    "firstName": "Arjun",
+    "lastName": "Prasad",
+    "address": {
+      "line1": "234 Maple Lane",
+      "line2": "Apt 15",
+      "city": "Salem",
+      "state": "Tamil Nadu",
+      "pincode": "636007"
+    },
+    "phone": "+915432109876",
+    "email": "arjun@gmail.com",
+    "dob": "1987-09-12",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Shalini",
+    "lastName": "Sundar",
+    "address": {
+      "line1": "567 Cedar Street",
+      "line2": "House 5",
+      "city": "Erode",
+      "state": "Tamil Nadu",
+      "pincode": "638002"
+    },
+    "phone": "+914321098765",
+    "email": "shalini@gmail.com",
+    "dob": "1995-02-28",
+    "gender": "Female"
+  },
+  {
+    "firstName": "Vijay",
+    "lastName": "Kumar",
+    "address": {
+      "line1": "890 Birch Avenue",
+      "line2": "Flat 12",
+      "city": "Tirunelveli",
+      "state": "Tamil Nadu",
+      "pincode": "627006"
+    },
+    "phone": "+913210987654",
+    "email": "vijay@gmail.com",
+    "dob": "1989-07-18",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Divya",
+    "lastName": "Rajesh",
+    "address": {
+      "line1": "111 Pinecone Road",
+      "line2": "House 8",
+      "city": "Kanyakumari",
+      "state": "Tamil Nadu",
+      "pincode": "629001"
+    },
+    "phone": "+912109876543",
+    "email": "divya@gmail.com",
+    "dob": "1993-12-05",
+    "gender": "Female"
+  },
+  {
+    "firstName": "Senthil",
+    "lastName": "Kumar",
+    "address": {
+      "line1": "222 Oakwood Drive",
+      "line2": "Apartment 3A",
+      "city": "Vellore",
+      "state": "Tamil Nadu",
+      "pincode": "632012"
+    },
+    "phone": "+911098765432",
+    "email": "senthil@gmail.com",
+    "dob": "1983-04-20",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Meera",
+    "lastName": "Venkat",
+    "address": {
+      "line1": "333 Redwood Lane",
+      "line2": "Suite 6B",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "pincode": "641005"
+    },
+    "phone": "+919876543210",
+    "email": "meera@gmail.com",
+    "dob": "1997-06-30",
+    "gender": "Female"
+  },
+  {
+    "firstName": "Rajesh",
+    "lastName": "Kumar",
+    "address": {
+      "line1": "444 Rosewood Street",
+      "line2": "Unit 8D",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600002"
+    },
+    "phone": "+919876543219",
+    "email": "rajesh@gmail.com",
+    "dob": "1986-06-18",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Nithya",
+    "lastName": "Srinivasan",
+    "address": {
+      "line1": "555 Sunflower Lane",
+      "line2": "Apartment 12",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625002"
+    },
+    "phone": "+917890123457",
+    "email": "nithya@gmail.com",
+    "dob": "1991-09-30",
+    "gender": "Female"
+  },
+  {
+    "firstName": "Ganesh",
+    "lastName": "Prabhu",
+    "address": {
+      "line1": "666 Magnolia Road",
+      "line2": "Suite 5A",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "pincode": "641002"
+    },
+    "phone": "+916543210988",
+    "email": "ganesh@gmail.com",
+    "dob": "1980-03-12",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Divya",
+    "lastName": "Suresh",
+    "address": {
+      "line1": "777 Jasmine Avenue",
+      "line2": "Floor 2",
+      "city": "Trichy",
+      "state": "Tamil Nadu",
+      "pincode": "620009"
+    },
+    "phone": "+915432109877",
+    "email": "divya@gmail.com",
+    "dob": "1995-11-05",
+    "gender": "Female"
+  },
+  {
+    "firstName": "Suresh",
+    "lastName": "Kumar",
+    "address": {
+      "line1": "888 Lily Lane",
+      "line2": "House 9",
+      "city": "Salem",
+      "state": "Tamil Nadu",
+      "pincode": "636008"
+    },
+    "phone": "+914321098766",
+    "email": "suresh@gmail.com",
+    "dob": "1984-04-28",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Anjali",
+    "lastName": "Nair",
+    "address": {
+      "line1": "999 Daisy Road",
+      "line2": "Flat 3B",
+      "city": "Erode",
+      "state": "Tamil Nadu",
+      "pincode": "638003"
+    },
+    "phone": "+913210987655",
+    "email": "anjali@gmail.com",
+    "dob": "1990-07-15",
+    "gender": "Female"
+  },
+  {
+    "firstName": "Rahul",
+    "lastName": "Gupta",
+    "address": {
+      "line1": "1010 Orchid Street",
+      "line2": "Unit 11",
+      "city": "Tirunelveli",
+      "state": "Tamil Nadu",
+      "pincode": "627007"
+    },
+    "phone": "+912109876544",
+    "email": "rahul@gmail.com",
+    "dob": "1982-02-09",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Kavya",
+    "lastName": "Rajendran",
+    "address": {
+      "line1": "1111 Azalea Avenue",
+      "line2": "House 6C",
+      "city": "Kanyakumari",
+      "state": "Tamil Nadu",
+      "pincode": "629002"
+    },
+    "phone": "+911098765433",
+    "email": "kavya@gmail.com",
+    "dob": "1993-12-20",
+    "gender": "Female"
+  },
+  {
+    "firstName": "Raj",
+    "lastName": "Sekar",
+    "address": {
+      "line1": "1222 Marigold Road",
+      "line2": "Suite 9A",
+      "city": "Vellore",
+      "state": "Tamil Nadu",
+      "pincode": "632013"
+    },
+    "phone": "+919876543211",
+    "email": "raj@gmail.com",
+    "dob": "1987-05-02",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Swathi",
+    "lastName": "Venkatesh",
+    "address": {
+      "line1": "1333 Tulip Lane",
+      "line2": "Apartment 2D",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "pincode": "641006"
+    },
+    "phone": "+919876543212",
+    "email": "swathi@gmail.com",
+    "dob": "1996-08-08",
+    "gender": "Female"
+  }
+]);
+
+db.products.insertMany([
+  {
+    name: "iPhone 15 Pro Max - 512 White",
+    img: ["iphone_15_pro_max_white.jpg"],
+    createdDate: new Date(),
+    desc: "Compact iPhone with powerful features. ",
+    sku: "APL-202301-000001",
+    supportedSkus: [],
+    sellerBundle: ['APL-100401-00002'],
+    stock: 100,
+    warehouse: ['Chennai'],
+    regular_price: 134000.00,
+    discount_price: 129999.00
+  },
+  {
+    name: "iPhone 15 Pro Max - 512 Black",
+    img: ["iphone_15_pro_max_black.jpg"],
+    createdDate: new Date(),
+    desc: "Compact iPhone with powerful features. ",
+    sku: "APL-202301-000003",
+    supportedSkus: [],
+    sellerBundle: ['APL-100401-00001'],
+    stock: 200,
+    warehouse: ['Chennai'],
+    regular_price: 139000.00,
+    discount_price: 133999.00
+  },
+  {
+    name: "iPhone 15 Pro Max - 512 Gold",
+    img: ["iphone_15_pro_max_gold.jpg"],
+    createdDate: new Date(),
+    desc: "Compact iPhone with powerful features. ",
+    sku: "APL-202301-000002",
+    supportedSkus: [],
+    sellerBundle: [],
+    stock: 130,
+    warehouse: ['Chennai'],
+    regular_price: 150000.00,
+    discount_price: 145999.00
+  },
+  {
+    name: "iPhone 15 Pro Max - 256 White",
+    img: ["iphone_15_pro_max_white.jpg"],
+    createdDate: new Date(),
+    desc: "Compact iPhone with powerful features. ",
+    sku: "APL-202301-000011",
+    supportedSkus: [],
+    sellerBundle: ['APL-100401-00002'],
+    stock: 100,
+    warehouse: ['Chennai'],
+    regular_price: 120000.00,
+    discount_price: 105999.00
+  },
+  {
+    name: "iPhone 15 Pro Max - 256 Black",
+    img: ["iphone_15_pro_max_black.jpg"],
+    createdDate: new Date(),
+    desc: "Compact iPhone with powerful features. ",
+    sku: "APL-202301-000012",
+    supportedSkus: [],
+    sellerBundle: ['APL-100401-00001'],
+    stock: 40,
+    warehouse: ['Chennai'],
+    regular_price: 119000.00,
+    discount_price: 114999.00
+  },
+  {
+    name: "iPhone 15 Pro Max - 256 Gold",
+    img: ["iphone_15_pro_max_gold.jpg"],
+    createdDate: new Date(),
+    desc: "Compact iPhone with powerful features. ",
+    sku: "APL-202301-000013",
+    supportedSkus: [],
+    sellerBundle: [],
+    stock: 110,
+    warehouse: ['Chennai'],
+    regular_price: 125000.00,
+    discount_price: 119999.00
+  },
+  {
+    name: "Apple 15 Pro Max Case - Black",
+    img: ["apple-15-pro-max-case-black.jpg"],
+    createdDate: new Date(),
+    desc: "Protective case for Apple 15 Pro Max with sleek design.",
+    sku: "APL-100401-00001",
+    supportedSkus: ['APL-202301-000003','APL-202301-000013'],
+    sellerBundle: [],
+    stock: 130,
+    warehouse: ['Chennai'],
+    regular_price: 2000.00,
+    discount_price: 1499.00
+  },
+  {
+    name: "Apple 15 Pro Max Case - White",
+    img: ["apple-15-pro-max-case-white.jpg"],
+    createdDate: new Date(),
+    desc: "Protective case for Apple 15 Pro Max with sleek design.",
+    sku: "APL-100401-00002",
+    supportedSkus: ['APL-202301-000001','APL-202301-000011'],
+    sellerBundle: [],
+    stock: 130,
+    warehouse: ['Chennai'],
+    regular_price: 2000.00,
+    discount_price: 1499.00
+  },
+  {
+    name: "Apple 15 Pro Max Case - White",
+    img: ["apple-15-pro-max-case-white.jpg"],
+    createdDate: new Date(),
+    desc: "Protective case for Apple 15 Pro Max with sleek design.",
+    sku: "QBI-000200-00001",
+    supportedSkus: ['APL-202301-000001','APL-202301-000011'],
+    sellerBundle: [],
+    stock: 10,
+    warehouse: ['Chennai'],
+    regular_price: 2000.00,
+    discount_price: 1499.00
+  },
+  {
+    name: "Apple 15 Pro Max Case - Black",
+    img: ["apple-15-pro-max-case-black.jpg"],
+    createdDate: new Date(),
+    desc: "Protective case for Apple 15 Pro Max with sleek design.",
+    sku: "QBI-000200-00002",
+    supportedSkus: ['APL-202301-000003','APL-202301-000013'],
+    sellerBundle: [],
+    stock: 1,
+    warehouse: ['Chennai'],
+    regular_price: 2000.00,
+    discount_price: 1499.00
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra - 512 White",
+    img: ["s23-white.jpg"],
+    createdDate: new Date(),
+    desc: "Next-gen Android smartphone with cutting-edge features.",
+    sku: "SMG-800010-000001",
+    supportedSkus: [],
+    sellerBundle: ['SMG-800230-00002','SMG-800290-00001','SMG-800310-00002'],
+    stock: 400,
+    warehouse: ['Chennai'],
+    regular_price: 125000.00,
+    discount_price: 119999.00
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra - 512 Black",
+    img: ["s23-black.jpg"],
+    createdDate: new Date(),
+    desc: "Next-gen Android smartphone with cutting-edge features.",
+    sku: "SMG-800010-000002",
+    supportedSkus: [],
+    sellerBundle: ['SMG-800230-00002','SMG-800290-00002','SMG-800310-00001'],
+    stock: 130,
+    warehouse: ['Chennai'],
+    regular_price: 125000.00,
+    discount_price: 119999.00
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra - 512 Green",
+    img: ["s23-black.jpg"],
+    createdDate: new Date(),
+    desc: "Next-gen Android smartphone with cutting-edge features.",
+    sku: "SMG-800010-000003",
+    supportedSkus: [],
+    sellerBundle: ['SMG-800290-00002','SMG-800310-00001'],
+    stock: 150,
+    warehouse: ['Chennai'],
+    regular_price: 125000.00,
+    discount_price: 119999.00
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra - 256 White",
+    img: ["s23-white.jpg"],
+    createdDate: new Date(),
+    desc: "Next-gen Android smartphone with cutting-edge features.",
+    sku: "SMG-800010-000011",
+    supportedSkus: [],
+    sellerBundle: ['SMG-800230-00001','SMG-800290-00001','SMG-800310-00002'],
+    stock: 400,
+    warehouse: ['Chennai'],
+    regular_price: 98000.00,
+    discount_price: 94999.00
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra - 256 Black",
+    img: ["s23-black.jpg"],
+    createdDate: new Date(),
+    desc: "Next-gen Android smartphone with cutting-edge features.",
+    sku: "SMG-800010-000012",
+    supportedSkus: [],
+    sellerBundle: ['SMG-800230-00001','SMG-800290-00002','SMG-800310-00001'],
+    stock: 130,
+    warehouse: ['Chennai'],
+    regular_price: 98000.00,
+    discount_price: 94999.00
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra - 256 Green",
+    img: ["s23-black.jpg"],
+    createdDate: new Date(),
+    desc: "Next-gen Android smartphone with cutting-edge features.",
+    sku: "SMG-800010-000013",
+    supportedSkus: [],
+    sellerBundle: ['SMG-800290-00002','SMG-800310-00001'],
+    stock: 150,
+    warehouse: ['Chennai'],
+    regular_price: 98000.00,
+    discount_price: 94999.00
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra Case - White",
+    img: ["s23-case-white.jpg"],
+    createdDate: new Date(),
+    desc: "Protective case for Samsung Galaxy S23 Ultra with sleek design.",
+    sku: "SMG-800230-00001",
+    supportedSkus: ['SMG-800010-000001','SMG-800010-000002','SMG-800010-000003','SMG-800010-000011','SMG-800010-000012','SMG-800010-000013'],
+    sellerBundle: [],
+    stock: 111,
+    warehouse: ['Chennai'],
+    regular_price: 2000.00,
+    discount_price: 1499.00
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra Case - Black",
+    img: ["s23-case-white.jpg"],
+    createdDate: new Date(),
+    desc: "Protective case for Samsung Galaxy S23 Ultra with sleek design.",
+    sku: "SMG-800230-00002",
+    supportedSkus: ['SMG-800010-000001','SMG-800010-000002','SMG-800010-000003','SMG-800010-000011','SMG-800010-000012','SMG-800010-000013'],
+    sellerBundle: [],
+    stock: 150,
+    warehouse: ['Chennai'],
+    regular_price: 2000.00,
+    discount_price: 1499.00
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra Case - Green",
+    img: ["s23-case-green.jpg"],
+    createdDate: new Date(),
+    desc: "Protective case for Samsung Galaxy S23 Ultra with sleek design.",
+    sku: "SMG-800230-00003",
+    supportedSkus: ['SMG-800010-000001','SMG-800010-000002','SMG-800010-000003','SMG-800010-000011','SMG-800010-000012','SMG-800010-000013'],
+    sellerBundle: [],
+    stock: 10,
+    warehouse: ['Chennai'],
+    regular_price: 2000.00,
+    discount_price: 1499.00
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra - MAGNETIC CASE ",
+    img: ["s23-case.jpg"],
+    createdDate: new Date(),
+    desc: "Protective case for Samsung Galaxy S23 Ultra with sleek design.",
+    sku: "QBS-102121-00001",
+    supportedSkus: ['SMG-800010-000001','SMG-800010-000002','SMG-800010-000003','SMG-800010-000011','SMG-800010-000012','SMG-800010-000013'],
+    sellerBundle: [],
+    stock: 10,
+    warehouse: ['Erode'],
+    regular_price: 1200.00,
+    discount_price: 999.00
+  },
+  {
+    name: "Samsung Galaxy S23 Ultra - Tempered Glass",
+    img: ["glass.jpg"],
+    createdDate: new Date(),
+    desc: "Protective glass for Samsung Galaxy S23 Ultra.",
+    sku: "QBS-800370-00001",
+    supportedSkus: ['SMG-800010-000001','SMG-800010-000002','SMG-800010-000003','SMG-800010-000011','SMG-800010-000012','SMG-800010-000013'],
+    sellerBundle: [],
+    stock: 50,
+    warehouse: ['Madurai'],
+    regular_price: 500.00,
+    discount_price: 399.00
+  },
+  {
+    name: "Samsung Charger 24w Fast Charger - White",
+    img: ["charger-white.jpg"],
+    createdDate: new Date(),
+    desc: "Quick and efficient charger for mobile phones.",
+    sku: "SMG-800290-00001",
+    supportedSkus: ['SMG-800010-000001','SMG-800010-000002','SMG-800010-000003','SMG-800010-000011','SMG-800010-000012','SMG-800010-000013'],
+    sellerBundle: [],
+    stock: 90,
+    warehouse: ['Chennai'],
+    regular_price: 2000.00,
+    discount_price: 1499.00
+  },
+  {
+    name: "Samsung Charger 24w Fast Charger - Black",
+    img: ["charger-black.jpg"],
+    createdDate: new Date(),
+    desc: "Quick and efficient charger for mobile phones.",
+    sku: "SMG-800290-00002",
+    supportedSkus: ['SMG-800010-000001','SMG-800010-000002','SMG-800010-000003','SMG-800010-000011','SMG-800010-000012','SMG-800010-000013'],
+    sellerBundle: [],
+    stock: 190,
+    warehouse: ['Chennai'],
+    regular_price: 2000.00,
+    discount_price: 1499.00
+  },
+  {
+    name: "Samsung Charging Cable C-type Black",
+    img: ["cable-black.jpg"],
+    createdDate: new Date(),
+    desc: "High-quality USB-C cable for fast data transfer and charging.",
+    sku: "SMG-800310-00001",
+    supportedSkus: ['SMG-800010-000001','SMG-800010-000002','SMG-800010-000003','SMG-800010-000011','SMG-800010-000012','SMG-800010-000013'],
+    sellerBundle: [],
+    stock: 100,
+    warehouse: ['Chennai'],
+    regular_price: 500.00,
+    discount_price: 459.00
+  },
+  {
+    name: "Samsung Charging Cable C-type White",
+    img: ["cable-white.jpg"],
+    createdDate: new Date(),
+    desc: "High-quality USB-C cable for fast data transfer and charging.",
+    sku: "SMG-800310-00002",
+    supportedSkus: ['SMG-800010-000001','SMG-800010-000002','SMG-800010-000003','SMG-800010-000011','SMG-800010-000012','SMG-800010-000013'],
+    sellerBundle: [],
+    stock: 190,
+    warehouse: ['Chennai'],
+    regular_price: 500.00,
+    discount_price: 459.00
+  },
+  {
+    name: "Charging Cable C-type White",
+    img: ["cable-white.jpg"],
+    createdDate: new Date(),
+    desc: "High-quality USB-C cable for fast data transfer and charging.",
+    sku: "QBI-100190-00001",
+    supportedSkus: ['SMG-800010-000001','SMG-800010-000002','SMG-800010-000003','SMG-800010-000011','SMG-800010-000012','SMG-800010-000013'],
+    sellerBundle: [],
+    stock: 190,
+    warehouse: ['Chennai'],
+    regular_price: 500.00,
+    discount_price: 459.00
+  },
+  {
+    name: "Charging Cable C-type Black",
+    img: ["cable-black.jpg"],
+    createdDate: new Date(),
+    desc: "High-quality USB-C cable for fast data transfer and charging.",
+    sku: "QBI-100190-00002",
+    supportedSkus: ['SMG-800010-000001','SMG-800010-000002','SMG-800010-000003','SMG-800010-000011','SMG-800010-000012','SMG-800010-000013'],
+    sellerBundle: [],
+    stock: 190,
+    warehouse: ['Chennai'],
+    regular_price: 500.00,
+    discount_price: 459.00
+  }
+]);
+
+db.orders.insertMany([
+  {
+    "userId": ObjectId("657fd36839729c802d40154b"),
+    "products": [
+      {
+        "sku": "APL-202301-000002",
+        "quantity": 1
+      },
+      {
+        "sku": "APL-100401-00001",
+        "quantity": 1
+      },
+      {
+        "sku": "QBS-800370-00001",
+        "quantity": 2
+      }
+    ],
+    "totalPrice": 133999.00,
+    "discountPercentage": 2,  // 2% discount
+    "discountPrice": 130329.02,  // Discounted price
+    "orderDate": ISODate("2023-01-03T12:00:00Z"),
+    "status": "Shipped"
+  },
+  {
+    "userId": ObjectId("657fd36839729c802d40154d"),
+    "products": [
+      {
+        "sku": "SMG-800010-000003",
+        "quantity": 1
+      },
+      {
+        "sku": "SMG-800230-00003",
+        "quantity": 1
+      },
+      {
+        "sku": "QBS-102121-00001",
+        "quantity": 1
+      },
+      {
+        "sku": "QBS-800370-00001",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 219998.00,
+    "discountPercentage": 5,  // 5% discount
+    "discountPrice": 208998.10,  // Discounted price
+    "orderDate": ISODate("2023-01-04T12:00:00Z"),
+    "status": "Processing"
+  },
+  {
+    "userId": ObjectId("657fd36839729c802d40154e"),
+    "products": [
+      {
+        "sku": "APL-202301-000011",
+        "quantity": 2
+      },
+      {
+        "sku": "APL-100401-00002",
+        "quantity": 1
+      },
+      {
+        "sku": "QBS-800370-00001",
+        "quantity": 3
+      }
+    ],
+    "totalPrice": 317997.00,
+    "discountPercentage": 3,  // 3% discount
+    "discountPrice": 308036.89,  // Discounted price
+    "orderDate": ISODate("2023-01-05T12:00:00Z"),
+    "status": "Delivered"
+  },
+  {
+    "userId": ObjectId("657fd36839729c802d401550"),
+    "products": [
+      {
+        "sku": "APL-202301-000002",
+        "quantity": 1
+      },
+      {
+        "sku": "APL-100401-00001",
+        "quantity": 1
+      },
+      {
+        "sku": "QBS-800370-00001",
+        "quantity": 2
+      }
+    ],
+    "totalPrice": 133999.00,
+    "discountPercentage": 2,
+    "discountPrice": 130329.02,
+    "orderDate": ISODate("2023-01-03T12:00:00Z"),
+    "status": "Shipped"
+  },
+  {
+    "userId": ObjectId("657fd36839729c802d401552"),
+    "products": [
+      {
+        "sku": "SMG-800010-000003",
+        "quantity": 1
+      },
+      {
+        "sku": "SMG-800230-00003",
+        "quantity": 1
+      },
+      {
+        "sku": "QBS-102121-00001",
+        "quantity": 1
+      },
+      {
+        "sku": "QBS-800370-00001",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 219998.00,
+    "discountPercentage": 5,
+    "discountPrice": 208998.10,
+    "orderDate": ISODate("2023-01-04T12:00:00Z"),
+    "status": "Processing"
+  },
+  {
+    "userId": ObjectId("657fd36839729c802d401553"),
+    "products": [
+      {
+        "sku": "APL-202301-000011",
+        "quantity": 2
+      },
+      {
+        "sku": "APL-100401-00002",
+        "quantity": 1
+      },
+      {
+        "sku": "QBS-800370-00001",
+        "quantity": 3
+      }
+    ],
+    "totalPrice": 317997.00,
+    "discountPercentage": 3,
+    "discountPrice": 308036.89,
+    "orderDate": ISODate("2023-01-05T12:00:00Z"),
+    "status": "Delivered"
+  },
+  {
+    "userId": ObjectId("657fd36839729c802d401555"),
+    "products": [
+      {
+        "sku": "APL-202301-000013",
+        "quantity": 1
+      },
+      {
+        "sku": "SMG-800010-000011",
+        "quantity": 2
+      },
+      {
+        "sku": "QBS-800370-00001",
+        "quantity": 2
+      }
+    ],
+    "totalPrice": 263997.00,
+    "discountPercentage": 4,
+    "discountPrice": 253117.92,
+    "orderDate": ISODate("2023-01-06T12:00:00Z"),
+    "status": "Processing"
+  },
+  {
+    "userId": ObjectId("657fd36839729c802d401557"),
+    "products": [
+      {
+        "sku": "SMG-800010-000001",
+        "quantity": 1
+      },
+      {
+        "sku": "SMG-800230-00001",
+        "quantity": 1
+      },
+      {
+        "sku": "QBS-102121-00001",
+        "quantity": 1
+      },
+      {
+        "sku": "QBS-800370-00001",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 148498.00,
+    "discountPercentage": 6,
+    "discountPrice": 139523.16,
+    "orderDate": ISODate("2023-01-07T12:00:00Z"),
+    "status": "Shipped"
+  }
+]);

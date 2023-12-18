@@ -1,0 +1,18 @@
+my_project/
+│
+├── data/
+│   ├── mock_data.json           # Store your mock data here
+│
+├── models/
+│   ├── tensorflow_model.py     # TensorFlow model implementation
+│
+├── scripts/
+│   ├── data_preparation.py     # Script for preparing data from MongoDB
+│   ├── model_training.py        # Script for training the TensorFlow model
+│   ├── model_evaluation.py      # Script for evaluating the model
+│   ├── real_time_integration.py # Script for real-time data integration
+│   ├── dynamic_pricing.py       # Script for implementing dynamic pricing
+│
+├── requirements.txt            # List of required Python packages
+├── config.yaml                 # Configuration file for MongoDB connection, etc.
+└── README.md                   # Project documentation

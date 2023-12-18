@@ -1,0 +1,22 @@
+# config.yaml
+
+mongo:
+  uri: "mongodb://localhost:27017/"
+  database: "dynamic_bundling_db"
+  
+# Model Hyperparameters
+model:
+  embedding_size: 50
+  epochs: 10
+  batch_size: 64
+
+# Other Configurations
+dynamic_pricing:
+  enabled: true
+  discount_threshold: 0.2
+  max_discount_percentage: 0.5
+
+# Logging Configuration
+logging:
+  level: "info"
+  file_path: "logs/app.log"
